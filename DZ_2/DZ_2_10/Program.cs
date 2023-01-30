@@ -20,9 +20,10 @@ int c = ((number/10)%10);
 return c;
 }
 int number = GetNumber();
+int count = number.ToString().Length;
 int result = SecondNumber(number);
 
-if (number < 99 || number > 999)
+if (count < 3 || count > 3)
 {
     Console.WriteLine("Вы ввели не трехзначное число");
 }
